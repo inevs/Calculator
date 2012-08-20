@@ -42,6 +42,24 @@
 	expect(displayLabel.text).to.equal(@"4");
 }
 
+- (void)testInsertsDecimalWithPeriod {
+	displayLabel.text = @"1";
+	[calculatorViewController buttonTouched:[self buttonWithTag:PeriodButton]];
+	expect(displayLabel.text).to.equal(@"1.");
+}
+
+- (void)testAllowsOnlyOnePeriod {
+	displayLabel.text = @"1.";
+	[calculatorViewController buttonTouched:[self buttonWithTag:PeriodButton]];
+	expect(displayLabel.text).to.equal(@"1.");
+}
+
+- (void)testAllowsOnlyOnePeriodInInput {
+	displayLabel.text = @"4.56";
+	[calculatorViewController buttonTouched:[self buttonWithTag:PeriodButton]];
+	expect(displayLabel.text).to.equal(@"4.56");
+}
+
 - (UIButton *)buttonWithTag:(NSInteger)tag {
 	UIButton *button = [[UIButton alloc] init];
 	button.tag = tag;
