@@ -14,12 +14,11 @@
 		26C63B0115E29C4D00DF5B9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C63B0015E29C4D00DF5B9F /* main.m */; };
 		26C63B0515E29C4D00DF5B9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C63B0415E29C4D00DF5B9F /* AppDelegate.m */; };
 		26C63B0815E29C4D00DF5B9F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26C63B0615E29C4D00DF5B9F /* MainStoryboard.storyboard */; };
-		26C63B0B15E29C4D00DF5B9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C63B0A15E29C4D00DF5B9F /* ViewController.m */; };
+		26C63B0B15E29C4D00DF5B9F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C63B0A15E29C4D00DF5B9F /* MainViewController.m */; };
 		26C63B1315E29C4D00DF5B9F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63B1215E29C4D00DF5B9F /* SenTestingKit.framework */; };
 		26C63B1415E29C4D00DF5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF415E29C4D00DF5B9F /* UIKit.framework */; };
 		26C63B1515E29C4D00DF5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF615E29C4D00DF5B9F /* Foundation.framework */; };
 		26C63B1D15E29C4D00DF5B9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C63B1B15E29C4D00DF5B9F /* InfoPlist.strings */; };
-		26C63B2015E29C4D00DF5B9F /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C63B1F15E29C4D00DF5B9F /* CalculatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +43,12 @@
 		26C63B0315E29C4D00DF5B9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26C63B0415E29C4D00DF5B9F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		26C63B0715E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		26C63B0915E29C4D00DF5B9F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26C63B0A15E29C4D00DF5B9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26C63B0915E29C4D00DF5B9F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		26C63B0A15E29C4D00DF5B9F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		26C63B1115E29C4D00DF5B9F /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63B1215E29C4D00DF5B9F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		26C63B1C15E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		26C63B1E15E29C4D00DF5B9F /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
-		26C63B1F15E29C4D00DF5B9F /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +111,8 @@
 				26C63B0315E29C4D00DF5B9F /* AppDelegate.h */,
 				26C63B0415E29C4D00DF5B9F /* AppDelegate.m */,
 				26C63B0615E29C4D00DF5B9F /* MainStoryboard.storyboard */,
-				26C63B0915E29C4D00DF5B9F /* ViewController.h */,
-				26C63B0A15E29C4D00DF5B9F /* ViewController.m */,
+				26C63B0915E29C4D00DF5B9F /* MainViewController.h */,
+				26C63B0A15E29C4D00DF5B9F /* MainViewController.m */,
 				26C63AFB15E29C4D00DF5B9F /* Supporting Files */,
 			);
 			path = Calculator;
@@ -135,8 +132,6 @@
 		26C63B1815E29C4D00DF5B9F /* CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				26C63B1E15E29C4D00DF5B9F /* CalculatorTests.h */,
-				26C63B1F15E29C4D00DF5B9F /* CalculatorTests.m */,
 				26C63B1915E29C4D00DF5B9F /* Supporting Files */,
 			);
 			path = CalculatorTests;
@@ -260,7 +255,7 @@
 			files = (
 				26C63B0115E29C4D00DF5B9F /* main.m in Sources */,
 				26C63B0515E29C4D00DF5B9F /* AppDelegate.m in Sources */,
-				26C63B0B15E29C4D00DF5B9F /* ViewController.m in Sources */,
+				26C63B0B15E29C4D00DF5B9F /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26C63B2015E29C4D00DF5B9F /* CalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +428,7 @@
 				26C63B2515E29C4D00DF5B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26C63B2615E29C4D00DF5B9F /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +437,7 @@
 				26C63B2815E29C4D00DF5B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
