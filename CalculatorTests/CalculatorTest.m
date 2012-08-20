@@ -1,3 +1,6 @@
+#define EXP_SHORTHAND
+#import "Expecta.h"
+
 #import <SenTestingKit/SenTestingKit.h>
 #import "CalculatorViewController.h"
 
@@ -16,10 +19,9 @@
 	calculatorViewController.displayLabel = displayLabel;
 }
 
-
 - (void)testShowsEmptyDisplayOnStart {
 	[calculatorViewController viewDidLoad];
-	STAssertEqualObjects(displayLabel.text, @"0", nil);
+	expect(displayLabel.text).to.equal(@"0");
 }
 
 @end
