@@ -9,8 +9,10 @@
 
 - (IBAction)buttonTouched:(id)sender {
 }
-- (void)viewDidUnload {
-    [self setDisplayLabel:nil];
-    [super viewDidUnload];
+
+- (void)viewDidLoad {
+	self.displayLabel.text = @"0";
 }
+
+
 @end
