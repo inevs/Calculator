@@ -361,6 +361,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="Tkd-um-qsN" id="6Gj-xi-G4n"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
@@ -371,6 +374,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonTouched:"/>
+                <relationship kind="outlet" name="displayLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
     </classes>

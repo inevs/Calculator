@@ -13,6 +13,7 @@
 
 @interface MainViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 - (IBAction)buttonTouched:(id)sender;
 
 @end
