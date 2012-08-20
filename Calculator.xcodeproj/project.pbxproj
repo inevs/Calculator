@@ -19,6 +19,7 @@
 		26C63B1415E29C4D00DF5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF415E29C4D00DF5B9F /* UIKit.framework */; };
 		26C63B1515E29C4D00DF5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF615E29C4D00DF5B9F /* Foundation.framework */; };
 		26C63B1D15E29C4D00DF5B9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C63B1B15E29C4D00DF5B9F /* InfoPlist.strings */; };
+		360E4D94E60492CE903C75DA /* CalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E449A40458C133B653C33 /* CalculatorTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		26C63B1215E29C4D00DF5B9F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		26C63B1C15E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360E449A40458C133B653C33 /* CalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		26C63B1815E29C4D00DF5B9F /* CalculatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				360E449A40458C133B653C33 /* CalculatorTest.m */,
 				26C63B1915E29C4D00DF5B9F /* Supporting Files */,
 			);
 			path = CalculatorTests;
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E4D94E60492CE903C75DA /* CalculatorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
