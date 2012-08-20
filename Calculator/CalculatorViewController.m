@@ -1,5 +1,7 @@
 #import "CalculatorViewController.h"
 
+#define Period @"."
+
 @interface CalculatorViewController ()
 
 @end
@@ -13,17 +15,25 @@
 
 - (IBAction)buttonTouched:(id)sender {
 	NSMutableString *input = [self inputFromDisplay];
-	NSString *character = [self characterFromButton:sender respectingToInput:input];
-	[input appendString:character];
+	NSString *character = [self characterFromButton:sender];
+	if ([self shouldAppendCharacter:character toPreviousInput:input]) {
+		[input appendString:character];
+	}
 	self.displayLabel.text = input;
 }
 
-- (NSString *)characterFromButton:(UIButton *)button respectingToInput:(NSString *)input {
+- (BOOL)shouldAppendCharacter:(NSString *)character toPreviousInput:(NSString *)input {
+	BOOL result = YES;
+	if ([character isEqualToString:Period] && [input rangeOfString:Period].location != NSNotFound) {
+		result = NO;
+	}
+	return result;
+}
+
+- (NSString *)characterFromButton:(UIButton *)button {
 	NSString *character = @"";
 	if ([button tag] == PeriodButton) {
-		if ([input rangeOfString:@"."].location == NSNotFound) {
-			character = @".";
-		}
+		character = Period;
 	} else {
 		character = [NSString stringWithFormat:@"%d", [button tag]];
 	}
