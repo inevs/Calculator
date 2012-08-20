@@ -1,10 +1,10 @@
-#import "MainViewController.h"
+#import "CalculatorViewController.h"
 
-@interface MainViewController ()
+@interface CalculatorViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation CalculatorViewController
 @synthesize displayLabel;
 
 - (IBAction)buttonTouched:(id)sender {

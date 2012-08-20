@@ -11,7 +11,7 @@
 #define MemDifButton 19
 #define MemResultButton 20
 
-@interface MainViewController : UIViewController
+@interface CalculatorViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 - (IBAction)buttonTouched:(id)sender;

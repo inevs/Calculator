@@ -7,6 +7,4 @@
 @implementation CalculatorTest {
 }
 
-
-
 @end
