@@ -7,7 +7,9 @@
 @end
 
 @implementation CalculatorViewController
+@synthesize currencyButtons;
 @synthesize displayLabel;
+@synthesize currencyLabel;
 
 - (void)viewDidLoad {
 	self.displayLabel.text = @"0";
@@ -20,6 +22,33 @@
 		[input appendString:character];
 	}
 	self.displayLabel.text = input;
+}
+
+- (IBAction)currencyButtonTouched:(id)sender {
+	switch ([sender tag]) {
+		case EuroButton:
+	        self.currencyLabel.text = @"€";
+	        break;
+		case DollarButton:
+	        self.currencyLabel.text = @"$";
+	        break;
+		case YenButton:
+			self.currencyLabel.text = @"¥";
+			break;
+		case GBPoundButton:
+			self.currencyLabel.text = @"£";
+			break;
+		default:
+	        break;
+	}
+	[self toggleEnablingOfButtonsRespectTo:sender];
+}
+
+- (void)toggleEnablingOfButtonsRespectTo:(id)sender {
+	for (UIButton *button in self.currencyButtons) {
+		button.enabled = YES;
+	}
+	[sender setEnabled:NO];
 }
 
 - (BOOL)shouldAppendCharacter:(NSString *)character toPreviousInput:(NSString *)input {
@@ -50,6 +79,5 @@
 	}
 	return input;
 }
-
 
 @end

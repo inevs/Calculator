@@ -6,14 +6,17 @@
 #define MulButtom 14
 #define DivButton 15
 #define ClearButton 16
-#define MemClearButton 17
-#define MemSumButton 18
-#define MemDifButton 19
-#define MemResultButton 20
+#define EuroButton 17
+#define DollarButton 18
+#define YenButton 19
+#define GBPoundButton 20
 
 @interface CalculatorViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *currencyButtons;
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
 - (IBAction)buttonTouched:(id)sender;
+- (IBAction)currencyButtonTouched:(id)sender;
 
 @end

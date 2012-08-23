@@ -19,6 +19,7 @@
 		26C63B1415E29C4D00DF5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF415E29C4D00DF5B9F /* UIKit.framework */; };
 		26C63B1515E29C4D00DF5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF615E29C4D00DF5B9F /* Foundation.framework */; };
 		26C63B1D15E29C4D00DF5B9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C63B1B15E29C4D00DF5B9F /* InfoPlist.strings */; };
+		360E45558778AFD8E0957CE9 /* CurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4A44711464ED9D97CDAC /* CurrencyConverter.m */; };
 		360E4D94E60492CE903C75DA /* CalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E449A40458C133B653C33 /* CalculatorTest.m */; };
 		E585D908826744E192A43DA3 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 528B1711C7B748A28D66B7A5 /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,9 @@
 		26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		26C63B1C15E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		360E449A40458C133B653C33 /* CalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
+		360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrencyConverter.h; path = Calculator/CurrencyConverter.h; sourceTree = "<group>"; };
+		360E4A44711464ED9D97CDAC /* CurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrencyConverter.m; path = Calculator/CurrencyConverter.m; sourceTree = "<group>"; };
+		360E4F26E5B8EF16F1B8BFEB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3A58E6446827462581C55090 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		528B1711C7B748A28D66B7A5 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-test.a"; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +88,9 @@
 		26C63AE515E29C4D00DF5B9F = {
 			isa = PBXGroup;
 			children = (
+				360E4F26E5B8EF16F1B8BFEB /* Podfile */,
+				360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */,
+				360E4A44711464ED9D97CDAC /* CurrencyConverter.m */,
 				26C63AFA15E29C4D00DF5B9F /* Calculator */,
 				26C63B1815E29C4D00DF5B9F /* CalculatorTests */,
 				26C63AF315E29C4D00DF5B9F /* Frameworks */,
@@ -280,6 +287,7 @@
 				26C63B0115E29C4D00DF5B9F /* main.m in Sources */,
 				26C63B0515E29C4D00DF5B9F /* AppDelegate.m in Sources */,
 				26C63B0B15E29C4D00DF5B9F /* CalculatorViewController.m in Sources */,
+				360E45558778AFD8E0957CE9 /* CurrencyConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
