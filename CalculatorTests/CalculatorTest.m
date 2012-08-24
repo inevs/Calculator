@@ -1,6 +1,12 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
+#define HC_SHORTHAND
+#import <OCHamcrest.h>
+
+#define MOCKITO_SHORTHAND
+#import <OCMockito.h>
+
 #import <SenTestingKit/SenTestingKit.h>
 #import "CalculatorViewController.h"
 #import "CurrencyConverter.h"
@@ -98,8 +104,12 @@
 }
 
 - (void)testConvertsCurrentValueIntoCurrency {
-	displayLabel.text = @"100";
+	displayLabel.text = @"100.00";
+	CurrencyConverter *converter = (id) mock([CurrencyConverter class]);
+	[given([converter convertValue:100.0 fromCurrency:CurrencyEuro toCurrency:CurrencyDollar]) willReturnFloat:125.0];
+	calculatorViewController.currencyConverter = converter;
 	[calculatorViewController currencyButtonTouched:[self buttonWithTag:DollarButton]];
-	CurrencyConverter *converter = mock([CurrencyConverter class]);
+	expect(displayLabel.text).to.equal(@"125.00");
+
 }
 @end

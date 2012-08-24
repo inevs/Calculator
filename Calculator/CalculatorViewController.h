@@ -1,4 +1,6 @@
+#import "CurrencyConverter.h"
 
+@class CurrencyConverter;
 #define PeriodButton 10
 #define EqualsButton 11
 #define SumButton 12
@@ -16,6 +18,8 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *currencyButtons;
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
+@property (nonatomic, strong) CurrencyConverter *currencyConverter;
+@property (nonatomic) Currency currency;
 - (IBAction)buttonTouched:(id)sender;
 - (IBAction)currencyButtonTouched:(id)sender;
 

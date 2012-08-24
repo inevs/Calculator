@@ -1,4 +1,5 @@
 #import "CalculatorViewController.h"
+#import "CurrencyConverter.h"
 
 #define Period @"."
 
@@ -13,6 +14,7 @@
 
 - (void)viewDidLoad {
 	self.displayLabel.text = @"0";
+	self.currency = CurrencyEuro;
 }
 
 - (IBAction)buttonTouched:(id)sender {
@@ -25,22 +27,32 @@
 }
 
 - (IBAction)currencyButtonTouched:(id)sender {
+	CGFloat value = [self.displayLabel.text floatValue];
 	switch ([sender tag]) {
 		case EuroButton:
 	        self.currencyLabel.text = @"€";
+	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyEuro];
+	        self.currency = CurrencyEuro;
 	        break;
 		case DollarButton:
 	        self.currencyLabel.text = @"$";
+	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyDollar];
+			self.currency = CurrencyDollar;
 	        break;
 		case YenButton:
 			self.currencyLabel.text = @"¥";
-			break;
+	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyYen];
+	        self.currency = CurrencyYen;
+	        break;
 		case GBPoundButton:
 			self.currencyLabel.text = @"£";
-			break;
+	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyPound];
+	        self.currency = CurrencyPound;
+	        break;
 		default:
 	        break;
 	}
+	self.displayLabel.text = [NSString stringWithFormat:@"%1.2f", value];
 	[self toggleEnablingOfButtonsRespectTo:sender];
 }
 
