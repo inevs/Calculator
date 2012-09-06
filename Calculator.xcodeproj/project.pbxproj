@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Calculator.app; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63AF415E29C4D00DF5B9F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26C63AF615E29C4D00DF5B9F /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26C63AF815E29C4D00DF5B9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,16 +48,16 @@
 		26C63B0715E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		26C63B0915E29C4D00DF5B9F /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		26C63B0A15E29C4D00DF5B9F /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
-		26C63B1115E29C4D00DF5B9F /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalculatorTests.octest; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C63B1115E29C4D00DF5B9F /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63B1215E29C4D00DF5B9F /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		26C63B1C15E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		360E449A40458C133B653C33 /* CalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorTest.m; sourceTree = "<group>"; };
-		360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CurrencyConverter.h; path = Calculator/CurrencyConverter.h; sourceTree = "<group>"; };
-		360E4A44711464ED9D97CDAC /* CurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CurrencyConverter.m; path = Calculator/CurrencyConverter.m; sourceTree = "<group>"; };
+		360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConverter.h; sourceTree = "<group>"; };
+		360E4A44711464ED9D97CDAC /* CurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverter.m; sourceTree = "<group>"; };
 		360E4F26E5B8EF16F1B8BFEB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3A58E6446827462581C55090 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
-		528B1711C7B748A28D66B7A5 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-test.a"; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		528B1711C7B748A28D66B7A5 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				360E4F26E5B8EF16F1B8BFEB /* Podfile */,
-				360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */,
-				360E4A44711464ED9D97CDAC /* CurrencyConverter.m */,
 				26C63AFA15E29C4D00DF5B9F /* Calculator */,
 				26C63B1815E29C4D00DF5B9F /* CalculatorTests */,
 				26C63AF315E29C4D00DF5B9F /* Frameworks */,
@@ -128,6 +126,8 @@
 				26C63B0615E29C4D00DF5B9F /* MainStoryboard.storyboard */,
 				26C63B0915E29C4D00DF5B9F /* CalculatorViewController.h */,
 				26C63B0A15E29C4D00DF5B9F /* CalculatorViewController.m */,
+				360E46DE1A8BA7BD6DDF5B98 /* CurrencyConverter.h */,
+				360E4A44711464ED9D97CDAC /* CurrencyConverter.m */,
 				26C63AFB15E29C4D00DF5B9F /* Supporting Files */,
 			);
 			path = Calculator;
