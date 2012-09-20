@@ -37,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		261C4488160B764B00A30FA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		261C44A5160B7A8000A30FA0 /* CalculatorTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorTest-Prefix.pch"; sourceTree = "<group>"; };
 		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63AF415E29C4D00DF5B9F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26C63AF615E29C4D00DF5B9F /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +160,7 @@
 		26C63B1915E29C4D00DF5B9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				261C44A5160B7A8000A30FA0 /* CalculatorTest-Prefix.pch */,
 				26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */,
 				26C63B1B15E29C4D00DF5B9F /* InfoPlist.strings */,
 			);
@@ -422,7 +424,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
+				GCC_PREFIX_HEADER = "CalculatorTests/CalculatorTest-Prefix.pch";
 				INFOPLIST_FILE = "CalculatorTests/CalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -440,7 +442,7 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
+				GCC_PREFIX_HEADER = "CalculatorTests/CalculatorTest-Prefix.pch";
 				INFOPLIST_FILE = "CalculatorTests/CalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

@@ -1,0 +1,12 @@
+#import "../Calculator/Calculator-Prefix.pch"
+
+#define EXP_SHORTHAND
+#import "Expecta.h"
+
+#define HC_SHORTHAND
+#import <OCHamcrest.h>
+
+#define MOCKITO_SHORTHAND
+#import <OCMockito.h>
+
+#import <SenTestingKit/SenTestingKit.h>
