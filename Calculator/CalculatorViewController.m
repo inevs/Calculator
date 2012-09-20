@@ -1,20 +1,11 @@
 #import "CalculatorViewController.h"
-#import "CurrencyConverter.h"
 
 #define Period @"."
 
-@interface CalculatorViewController ()
-
-@end
-
 @implementation CalculatorViewController
-@synthesize currencyButtons;
-@synthesize displayLabel;
-@synthesize currencyLabel;
 
 - (void)viewDidLoad {
 	self.displayLabel.text = @"0";
-	self.currency = CurrencyEuro;
 }
 
 - (IBAction)buttonTouched:(id)sender {
@@ -27,40 +18,6 @@
 }
 
 - (IBAction)currencyButtonTouched:(id)sender {
-	CGFloat value = [self.displayLabel.text floatValue];
-	switch ([sender tag]) {
-		case EuroButton:
-	        self.currencyLabel.text = @"€";
-	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyEuro];
-	        self.currency = CurrencyEuro;
-	        break;
-		case DollarButton:
-	        self.currencyLabel.text = @"$";
-	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyDollar];
-			self.currency = CurrencyDollar;
-	        break;
-		case YenButton:
-			self.currencyLabel.text = @"¥";
-	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyYen];
-	        self.currency = CurrencyYen;
-	        break;
-		case GBPoundButton:
-			self.currencyLabel.text = @"£";
-	        value = [self.currencyConverter convertValue:value fromCurrency:self.currency toCurrency:CurrencyPound];
-	        self.currency = CurrencyPound;
-	        break;
-		default:
-	        break;
-	}
-	self.displayLabel.text = [NSString stringWithFormat:@"%1.2f", value];
-	[self toggleEnablingOfButtonsRespectTo:sender];
-}
-
-- (void)toggleEnablingOfButtonsRespectTo:(id)sender {
-	for (UIButton *button in self.currencyButtons) {
-		button.enabled = YES;
-	}
-	[sender setEnabled:NO];
 }
 
 - (BOOL)shouldAppendCharacter:(NSString *)character toPreviousInput:(NSString *)input {
@@ -72,7 +29,7 @@
 }
 
 - (NSString *)characterFromButton:(UIButton *)button {
-	NSString *character = @"";
+	NSString *character;
 	if ([button tag] == PeriodButton) {
 		character = Period;
 	} else {
