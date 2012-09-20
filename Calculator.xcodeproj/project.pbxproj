@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261C4489160B764B00A30FA0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 261C4488160B764B00A30FA0 /* Default-568h@2x.png */; };
 		26C63AF515E29C4D00DF5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF415E29C4D00DF5B9F /* UIKit.framework */; };
 		26C63AF715E29C4D00DF5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF615E29C4D00DF5B9F /* Foundation.framework */; };
 		26C63AF915E29C4D00DF5B9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF815E29C4D00DF5B9F /* CoreGraphics.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		261C4488160B764B00A30FA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63AF415E29C4D00DF5B9F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26C63AF615E29C4D00DF5B9F /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 		26C63AE515E29C4D00DF5B9F = {
 			isa = PBXGroup;
 			children = (
+				261C4488160B764B00A30FA0 /* Default-568h@2x.png */,
 				360E4F26E5B8EF16F1B8BFEB /* Podfile */,
 				26C63AFA15E29C4D00DF5B9F /* Calculator */,
 				26C63B1815E29C4D00DF5B9F /* CalculatorTests */,
@@ -236,6 +239,7 @@
 			files = (
 				26C63AFF15E29C4D00DF5B9F /* InfoPlist.strings in Resources */,
 				26C63B0815E29C4D00DF5B9F /* MainStoryboard.storyboard in Resources */,
+				261C4489160B764B00A30FA0 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
