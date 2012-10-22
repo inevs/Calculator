@@ -1,9 +1,9 @@
 #import "CalculatorViewController.h"
 
-@interface CalculatorTest : SenTestCase
+@interface CalculatorViewControllerTest : SenTestCase
 @end
 
-@implementation CalculatorTest {
+@implementation CalculatorViewControllerTest {
 	CalculatorViewController *calculatorViewController;
 	UILabel *displayLabel;
 }
