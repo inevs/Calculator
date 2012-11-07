@@ -1,7 +1,7 @@
 When /^I enter "(.*?)"$/ do |keys|
   @input = keys;
   keys.split("").each do |key|
-    touch("view marked:'#{key}'")
+    touch("button marked:'#{key}'")
   end
 end
 
