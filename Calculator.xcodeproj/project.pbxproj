@@ -20,6 +20,9 @@
 		26C63B1415E29C4D00DF5B9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF415E29C4D00DF5B9F /* UIKit.framework */; };
 		26C63B1515E29C4D00DF5B9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C63AF615E29C4D00DF5B9F /* Foundation.framework */; };
 		26C63B1D15E29C4D00DF5B9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26C63B1B15E29C4D00DF5B9F /* InfoPlist.strings */; };
+		360E40D9691C21BDDDD72140 /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4141581654C9EBFB9041 /* NSString+Utility.m */; };
+		360E4C077B6A0C81E35EF42D /* CalculatorViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E470539B7F8C9229B2FF9 /* CalculatorViewControllerTest.m */; };
+		360E4CBCA12043ED21FCC2CA /* CurrencyRateRetriever.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E481F387BA4F477781C78 /* CurrencyRateRetriever.m */; };
 		E585D908826744E192A43DA3 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 528B1711C7B748A28D66B7A5 /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		261C4488160B764B00A30FA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		261C44A5160B7A8000A30FA0 /* CalculatorTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CalculatorTest-Prefix.pch"; sourceTree = "<group>"; };
-		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C63AF015E29C4D00DF5B9F /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Calculator.app; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63AF415E29C4D00DF5B9F /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26C63AF615E29C4D00DF5B9F /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26C63AF815E29C4D00DF5B9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,10 +52,15 @@
 		26C63B0715E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		26C63B0915E29C4D00DF5B9F /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		26C63B0A15E29C4D00DF5B9F /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
-		26C63B1115E29C4D00DF5B9F /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26C63B1115E29C4D00DF5B9F /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CalculatorTests.octest; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26C63B1215E29C4D00DF5B9F /* SenTestingKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		26C63B1A15E29C4D00DF5B9F /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		26C63B1C15E29C4D00DF5B9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360E4090F5AF74D252DB0DFE /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
+		360E4141581654C9EBFB9041 /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
+		360E433FE7445C8E84E69B60 /* CurrencyRateRetriever.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyRateRetriever.h; sourceTree = "<group>"; };
+		360E470539B7F8C9229B2FF9 /* CalculatorViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewControllerTest.m; sourceTree = "<group>"; };
+		360E481F387BA4F477781C78 /* CurrencyRateRetriever.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyRateRetriever.m; sourceTree = "<group>"; };
 		360E4F26E5B8EF16F1B8BFEB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		3A58E6446827462581C55090 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		528B1711C7B748A28D66B7A5 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,10 @@
 				26C63B0915E29C4D00DF5B9F /* CalculatorViewController.h */,
 				26C63B0A15E29C4D00DF5B9F /* CalculatorViewController.m */,
 				26C63AFB15E29C4D00DF5B9F /* Supporting Files */,
+				360E4141581654C9EBFB9041 /* NSString+Utility.m */,
+				360E4090F5AF74D252DB0DFE /* NSString+Utility.h */,
+				360E481F387BA4F477781C78 /* CurrencyRateRetriever.m */,
+				360E433FE7445C8E84E69B60 /* CurrencyRateRetriever.h */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -145,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				26C63B1915E29C4D00DF5B9F /* Supporting Files */,
+				360E470539B7F8C9229B2FF9 /* CalculatorViewControllerTest.m */,
 			);
 			path = CalculatorTests;
 			sourceTree = "<group>";
@@ -285,6 +298,8 @@
 				26C63B0115E29C4D00DF5B9F /* main.m in Sources */,
 				26C63B0515E29C4D00DF5B9F /* AppDelegate.m in Sources */,
 				26C63B0B15E29C4D00DF5B9F /* CalculatorViewController.m in Sources */,
+				360E40D9691C21BDDDD72140 /* NSString+Utility.m in Sources */,
+				360E4CBCA12043ED21FCC2CA /* CurrencyRateRetriever.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360E4C077B6A0C81E35EF42D /* CalculatorViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,3 +1,4 @@
+@class CurrencyRateRetriever;
 #define PeriodButton 10
 #define EqualsButton 11
 #define SumButton 12
@@ -12,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
 
+@property (nonatomic, strong) CurrencyRateRetriever *currencyRateRetriever;
 - (IBAction)buttonTouched:(id)sender;
 - (IBAction)currencyButtonTouched:(id)sender;
 
